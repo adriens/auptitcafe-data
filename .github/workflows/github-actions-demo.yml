@@ -21,6 +21,7 @@ jobs:
       - name: 📤 Commit file
         run: |
           git config --global user.name "adriens"
+          git config --global user.email "adrien.sales@gmail.com"
           git pull origin main
           git add .
           git add data/current_menus_headers.csv
