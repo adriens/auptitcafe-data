@@ -15,4 +15,7 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+          chmod u+x menus.sh
+          ./menus.sh
+          ls -ltr
       - run: echo "🍏 This job's status is ${{ job.status }}."
