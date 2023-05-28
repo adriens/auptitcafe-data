@@ -1,18 +1,14 @@
-name: GitHub Actions Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: 🔁 Repeat Daily snapshot des menus
+run-name: 🔁 Repeat Daily snapshot des menus
 on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-      - name: Check out repository code
+      - name: 📥 Check out repository code
         uses: actions/checkout@v3
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - name: Generate file
+      - run: echo "ℹ️ The ${{ github.repository }} repository has been cloned to the runner."
+      - name: 🤖 Generate file
         run: |
           ls ${{ github.workspace }}
           chmod u+x menus.sh
@@ -20,7 +16,7 @@ jobs:
           pip install duckdb --upgrade
           ./menus.sh
           ls -ltr
-      - name: Commit file
+      - name: 📤 Commit file
         run: |
           git config --global user.name "adriens"
           git add data/current_menus_headers.csv
