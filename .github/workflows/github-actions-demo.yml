@@ -2,7 +2,7 @@ name: 🔁 Repeat Daily snapshot des menus
 run-name: 🔁 Repeat Daily snapshot des menus
 on:
   schedule:
-    - cron: '0 0 * * 2' # Runs every Tuesday at 00:00 UTC
+    - cron: '0 0 * * *' # S'exécute tous les jours à 00:00 UTC
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
