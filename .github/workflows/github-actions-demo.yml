@@ -1,8 +1,6 @@
 name: 🔁 Snapshot hebdomadaire des menusà à déguster sur place
 run-name: 🔁 Snapshot hebdomadaire des menus
-on:
-  schedule:
-    - cron: '0 0 * * 2' # Chaque mardi à minuit UTC
+on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
