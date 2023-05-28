@@ -1,8 +1,8 @@
-name: 🔁 Repeat Daily snapshot des menus
-run-name: 🔁 Repeat Daily snapshot des menus
+name: 🔁 Snapshot hebdomadaire des menusà à déguster sur place
+run-name: 🔁 Snapshot hebdomadaire des menus
 on:
   schedule:
-    - cron: '0 0 * * *' # S'exécute tous les jours à 00:00 UTC
+    - cron: '0 0 * * 2' # Chaque mardi à minuit UTC
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -20,7 +20,7 @@ jobs:
           ls -ltr
       - name: 📤 Commit file
         run: |
-          git config --global user.name "adriens"
+          git config --global user.name "rastadidi"
           git add data/current_menus_headers.csv
           git commit -m "🔁 Daily snapshot des menus 📜, cf #1 "
           git push
