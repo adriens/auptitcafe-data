@@ -16,6 +16,8 @@ jobs:
         run: |
           ls ${{ github.workspace }}
           chmod u+x menus.sh
+          pip install auptitcafe --upgrade
+          pip install duckdb --upgrade
           ./menus.sh
           ls -ltr
       - run: echo "🍏 This job's status is ${{ job.status }}."
