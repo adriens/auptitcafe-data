@@ -38,5 +38,4 @@ os.system('mkdir -p data')
 con.execute("""COPY menus TO 'data/current_menus.csv';""")
 con.execute("""COPY menus TO 'data/current_menus_headers.csv' (HEADER, DELIMITER ',');""")
 
-
 os.system('cat data/current_menus.csv >> data/menus.csv')
