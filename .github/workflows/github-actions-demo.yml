@@ -21,7 +21,9 @@ jobs:
       - name: 📤 Commit file
         run: |
           git config --global user.name "adriens"
+          git pull origin main
+          git add .
           git add data/current_menus_headers.csv
           git commit -m "🔁 Daily snapshot des menus 📜, cf #1 "
-          git push
+          git push origin main
       - run: echo "🍏 This job's status is ${{ job.status }}."
