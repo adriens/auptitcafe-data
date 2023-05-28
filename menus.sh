@@ -33,4 +33,6 @@ con.execute("""insert into menus
         from 'menus.csv';""")
 con.execute("""COPY menus TO 'current_menus.csv';""")
 con.execute("""COPY menus TO 'current_menus_headers.csv' (HEADER, DELIMITER ',');""")
+
+import os
 os.system('cat current_menus.csv >> menus.csv')
