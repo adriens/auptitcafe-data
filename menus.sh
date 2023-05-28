@@ -35,7 +35,7 @@ con.execute("""insert into menus
 import os
 os.system('mkdir -p data')
 
-con.execute("""COPY menus TO 'current_menus.csv';""")
+con.execute("""COPY menus TO 'data/current_menus.csv';""")
 con.execute("""COPY menus TO 'data/current_menus_headers.csv' (HEADER, DELIMITER ',');""")
 
 
