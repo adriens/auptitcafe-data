@@ -32,7 +32,7 @@ con.execute("""insert into menus
         image_url
         from 'menus.csv';""")
 con.execute("""COPY menus TO 'current_menus.csv';""")
-con.execute("""COPY menus TO 'current_menus_headers.csv' (HEADER, DELIMITER ',');""")
+con.execute("""COPY menus TO 'data/current_menus_headers.csv' (HEADER, DELIMITER ',');""")
 
 import os
-os.system('cat current_menus.csv >> menus.csv')
+os.system('cat data/current_menus.csv >> data/menus.csv')
