@@ -18,6 +18,7 @@ jobs:
           ls -ltr
       - name: 📤 Commit file
         run: |
+          git config --global user.name "adriens"
           git add data/current_menus_headers.csv
           git commit -m "🔁 Daily snapshot des menus 📜, cf #1 "
           git push
