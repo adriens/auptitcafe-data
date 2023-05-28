@@ -23,7 +23,7 @@ jobs:
       - name: Commit file
         run: |
           git config --global user.name "adriens"
-          git add data/current_menus-headers.csv
+          git add data/current_menus_headers.csv
           git commit -m "Snapshot quotidien des menus"
           git push
       - run: echo "🍏 This job's status is ${{ job.status }}."
