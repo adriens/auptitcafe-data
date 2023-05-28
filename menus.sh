@@ -3,9 +3,6 @@
 import os
 os.system('pip install auptitcafe --upgrade')
 os.system('pip --quiet install duckdb --upgrade')
-os.system('pip --quiet install pandas --upgrade')
-
-import pandas as pd
 
 import duckdb
 con = duckdb.connect(database=':memory:')
