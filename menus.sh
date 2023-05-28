@@ -2,7 +2,7 @@
 
 import os
 os.system('pip install auptitcafe --upgrade')
-os.system('pip --quiet install duckdb --upgrade')
+os.system('pip install duckdb --upgrade')
 
 import duckdb
 con = duckdb.connect(database=':memory:')
