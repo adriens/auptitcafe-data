@@ -31,8 +31,12 @@ con.execute("""insert into menus
         recette,
         image_url
         from 'menus.csv';""")
+
+import os
+os.system('mkdir -p data')
+
 con.execute("""COPY menus TO 'current_menus.csv';""")
 con.execute("""COPY menus TO 'data/current_menus_headers.csv' (HEADER, DELIMITER ',');""")
 
-import os
+
 os.system('cat data/current_menus.csv >> data/menus.csv')
