@@ -10,3 +10,13 @@ install httpfs;
 select *
 from 'https://raw.githubusercontent.com/adriens/auptitcafe-data/main/data/current_menus_headers.csv';
 ```
+
+### `bash`
+
+```shell
+duckdb << EOF
+install httpfs;
+select * from 'https://raw.githubusercontent.com/adriens/auptitcafe-data/main/data/current_menus_headers.csv';
+EOF
+
+```
