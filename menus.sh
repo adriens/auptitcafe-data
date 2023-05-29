@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import os
 import duckdb
 con = duckdb.connect(database=':memory:')
 
@@ -11,7 +12,8 @@ from auptitcafe.menus import Menus
 menu_instance = Menus()
 
 # Dump menus as a csv file
-menus = 'menus.csv'
+os.system('mkdir -p data')
+menus = 'data/menus.csv'
 menu_instance.to_csv(menus)
 
 con.execute("""create or replace table menus(
@@ -30,12 +32,10 @@ con.execute("""insert into menus
         category,
         recette,
         image_url
-        from 'menus.csv';""")
-
-import os
-os.system('mkdir -p data')
+        from 'data/menus.csv';""")
+os.system('rm data/menus.csv')
 
 con.execute("""COPY menus TO 'data/current_menus.csv';""")
 con.execute("""COPY menus TO 'data/current_menus_headers.csv' (HEADER, DELIMITER ',');""")
 
-os.system('cat data/current_menus.csv >> data/menus.csv')
+os.system('cat data/current_menus.csv >> data/menus_hist.csv')
