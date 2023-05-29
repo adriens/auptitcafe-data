@@ -2,7 +2,7 @@ name: 🔁 Snapshot hebdomadaire des menusà à déguster sur place
 run-name: 🔁 Snapshot hebdomadaire des menus
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  Snapshot-Menus:
     runs-on: ubuntu-latest
     steps:
       - name: 📥 Check out repository code
