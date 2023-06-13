@@ -8,7 +8,8 @@ Data historisées
 ```sql
 install httpfs;
 select *
-from 'https://raw.githubusercontent.com/adriens/auptitcafe-data/main/data/current_menus_headers.csv';
+from 'https://bit.ly/3N69GGD';
+
 ```
 
 ### `bash`
@@ -16,7 +17,7 @@ from 'https://raw.githubusercontent.com/adriens/auptitcafe-data/main/data/curren
 ```shell
 duckdb << EOF
 install httpfs;
-select * from 'https://raw.githubusercontent.com/adriens/auptitcafe-data/main/data/current_menus_headers.csv';
+select * from 'https://bit.ly/3N69GGD';
 EOF
 
 ```
