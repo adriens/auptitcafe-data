@@ -30,7 +30,10 @@ Display the current menu data
 ```sh
 duckdb << EOF
 install httpfs;
-select *
+select titre_plat as "Plat",
+    prix as "Prix",
+    category as "Category",
+    recette as "Recette"
 from 'https://raw.githubusercontent.com/adriens/auptitcafe-data/main/data/current_menus_headers.csv';
 EOF
 ```
