@@ -1,3 +1,6 @@
+[![xc compatible](https://xcfile.dev/badge.svg)](https://xcfile.dev)
+
+
 # auptitcafe-data
 Data historisées
 
