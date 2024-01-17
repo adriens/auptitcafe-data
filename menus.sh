@@ -35,7 +35,7 @@ con.execute("""insert into menus
         from 'data/menus.csv';""")
 os.system('rm data/menus.csv')
 
-con.execute("""COPY menus TO 'data/current_menus.csv';""")
+con.execute("""COPY menus TO 'data/current_menus.csv' (FORMAT CSV, DELIMITER ',', HEADER false);""")
 con.execute("""COPY menus TO 'data/current_menus_headers.csv' (HEADER, DELIMITER ',');""")
 
 os.system('cat data/current_menus.csv >> data/menus_hist.csv')
