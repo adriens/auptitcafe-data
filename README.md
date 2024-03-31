@@ -12,8 +12,6 @@ You can chat with menus on HuggingChat:
 - [📝 Dedicated article](https://dev.to/adriens/huggingchat-assistant-ask-waiter-for-menu-advices-2kfc)
 - [🤖 Au p'tit café HuggingChat Assistant](https://bit.ly/3SJcNsg)
 
-https://bit.ly/3SJcNsg
-
 # 🦆 Play with `SQL` in `duckdb`
 
 ## Current menu
