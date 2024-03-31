@@ -1,8 +1,18 @@
 [![xc compatible](https://xcfile.dev/badge.svg)](https://xcfile.dev)
 
 
-# auptitcafe-data
-Data historisées
+# ❔ About
+
+Historized data in `csv` format **so anyone can play with ease with the datas.**
+
+# 🤖 Chat with menus
+
+You can chat with menus on HuggingChat:
+
+- [📝 Dedicated article](https://dev.to/adriens/huggingchat-assistant-ask-waiter-for-menu-advices-2kfc)
+- [🤖 Au p'tit café HuggingChat Assistant](https://bit.ly/3SJcNsg)
+
+https://bit.ly/3SJcNsg
 
 # 🦆 Play with `SQL` in `duckdb`
 
