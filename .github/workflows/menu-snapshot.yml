@@ -2,7 +2,8 @@ name: 🔁 Snapshot hebdomadaire des menusà à déguster sur place
 run-name: 🔁 Snapshot hebdo des menus
 on: 
   schedule:
-    - cron:  '0 12 * * 2'    
+    - cron:  '0 12 * * 2'
+  workflow_dispatch:    
 jobs:
   Snapshot-Menus:
     runs-on: ubuntu-latest
