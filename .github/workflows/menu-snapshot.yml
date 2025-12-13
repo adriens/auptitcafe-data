@@ -1,5 +1,5 @@
 name: 🔁 Snapshot hebdomadaire des menusà à déguster sur place
-run-name: 🔁 Snapshot hebdomadaire des menus
+run-name: 🔁 Snapshot hebdo des menus
 on: 
   schedule:
     - cron:  '0 12 * * 2'    
