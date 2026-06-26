@@ -23,6 +23,7 @@ jobs:
         run: |
           git config --global user.name "adriens"
           git config --global user.email "adrien.sales@gmail.com"
+          git diff --quiet && git diff --cached --quiet && echo "Nothing to commit, skipping." && exit 0
           git commit -a -m "🔁 Daily snapshot des menus 📜, cf #1"
           git push origin main
       - run: echo "🍏 This job's status is ${{ job.status }}."
